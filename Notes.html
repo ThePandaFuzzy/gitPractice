@@ -28,6 +28,9 @@
     table {
         border: 2px solid black;
         border-collapse: collapse;
+        background-color:red;
+        width:50%;
+        height:25%;
         }
     th, td {
         border: 2px solid black;
@@ -57,9 +60,30 @@
 <style>
     div {
     background-color:red;
+    border:5px dotted blue;
     width:400px;
     length:400px;
     margin:30px;
-    padding:30px;
+    padding:10px;
+    font-family:Arial,sans-serif;
+    font-size:20px;
     }
+</style>
+<div id="top">This is the <span class="name">top</span> of the web page</div>
+<div id="middle">This is the <span class="name">middle</span> of the web page</div>
+<div id="bottom">This is the <span class="name">bottom</span> of the web page</div>
+<style>
+    #top{
+    font-size:12px;
+    padding:20px;
+    color:purple}
+    #middle{
+    font-size:24px;
+    padding:10px;}
+    #bottom{
+    font-size:48px;
+    padding:5px;}
+    .name{
+    font-weight:bold;
+    color:yellow;}
 </style>
