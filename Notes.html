@@ -1,19 +1,32 @@
 <title>Testing Site</title>
 <ul>
-    <p>Hi</p>
-    <p>Bye</p>
+    <li><p>Hi</p></li>
+    <li><p>Bye</p></li>
 </ul>
 
 <ol>
-    <p>Hi</p>
-    <p>Bye</p>
+    <li><p>Hi</p></li>
+    <li><p>Bye</p></li>
 </ol>
-
+<ol>
+    <li><p>Item 1</p></li>
+    <ul>
+        <li><p>SubItem1</p></li>
+        <li><p>SubItem2</p></li>
+    </ul>
+    <li><p>Item 2</p></li>
+</ol>
+<style>
+    ol > li{
+    color:red;
+   }
+</style>
+<a href="#Section1">Section 1</a>
 <table>
 <tr>
-    <th><h4>First Name</h4></th>
-    <th><h4>Middle Name</h4></th>
-    <th><h4>Last Name</h4></th>
+    <th><h4>Species Name</h4></th>
+    <th><h4>Name</h4></th>
+    <th><h4>Family Name</h4></th>
 </tr>
 
 <tr>
@@ -35,15 +48,15 @@
     th, td {
         border: 2px solid black;
         border-collapse: collapse;
-        padding: 8px;
+        padding: 2px;
     </style>
 </table>
 
-<input type="Text" placeholder="First Name" name="Name">
+<input type="Text" placeholder="First Name" name="SpeciesName">
 <button>Submit</button>
-<input type="Text" placeholder="Middle Name" name="Name">
+<input type="Text" placeholder="Middle Name" name="SpecialName">
 <button>Submit</button>
-<input type="Text" placeholder="Last Name" name="Name">
+<input type="Text" placeholder="Last Name" name="FamilyName">
 <button>Submit</button>
 <body>
 <h1 style="color:blue; text-align:center;">Hi!</h1>
@@ -87,3 +100,50 @@
     font-weight:bold;
     color:yellow;}
 </style>
+<a href="https://Google.com">Google</a>
+<h1 id="Section1">Section 1</h1>
+<p>Hi</p>
+<div>
+    <input type="Text" placeholder="Name" name="Name">
+    <input type="Number" placeholder="Age" name="Age">
+    <input type="Password" placeholder="Password" name="Password">
+</div>
+<style>
+    input[type=Text] {
+    background-color:red;
+    }
+    input[type=Number] {
+    background-color:blue;
+    }
+</style>
+<div>
+    <p>What is your favorite color?</p>
+    <input type="Radio" value="Red" name="color"> Red
+    <input type="Radio" value="Blue" name="color"> Blue
+</div>
+<div>
+    <input list="animals" placeholder="Animals" name="Animals">
+    <datalist id="animals">
+        <option value="Panda">
+        <option value="Cheetah">
+        <option value="Falcon">
+        <option value="Whale">
+    </datalist>
+</div>
+<button>Press Me</button>
+<style>
+    button {
+    width: 50px;
+    length: 30px;
+    font-size: 10px;
+    font-family: Arial,sans-serif;
+    background-color: green;
+}
+    button:hover {
+    background-color: blue;
+   }
+   h3::before{
+   font-weight:bold;
+   content: "\21d2 Click Here: ";
+</style>
+<h3 href="https://Yahoo.com">Google</h3>
